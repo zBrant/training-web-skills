@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From - Of</title>
+</head>
+<body>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, excepturi? Eius, nesciunt. Fugiat a obcaecati perspiciatis ducimus quaerat et molestiae atque, nulla sequi libero vitae perferendis recusandae ea nesciunt nisi!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, excepturi? Eius, nesciunt. Fugiat a obcaecati perspiciatis ducimus quaerat et molestiae atque, nulla sequi libero vitae perferendis recusandae ea nesciunt nisi!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, excepturi? Eius, nesciunt. Fugiat a obcaecati perspiciatis ducimus quaerat et molestiae atque, nulla sequi libero vitae perferendis recusandae ea nesciunt nisi!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, excepturi? Eius, nesciunt. Fugiat a obcaecati perspiciatis ducimus quaerat et molestiae atque, nulla sequi libero vitae perferendis recusandae ea nesciunt nisi!</p>
+
+    <script>
+        // novo array de 3 posições 
+        const arr1 = new Array(3)
+        console.log(arr1)
+        console.log(arr1.length)
+
+        // cria o array com os elementos do argumento
+        const arr3 = Array.of(3) 
+        console.log(arr3)
+        console.log(arr3.length)
+
+        const arr2 = Array.from(arr1) // cria uma cópia
+        console.log(arr3)
+        console.log(arr3.length)
+
+        let pgh = document.querySelectorAll('p')
+        console.log(pgh)
+        // pgh.forEach((p, i) => {
+        //     p.textContent = `${++i} - ${p.textContent}`
+        // });
+
+        pgh = Array.from(pgh)
+
+        pgh.map((p, i) => {
+            p.textContent = `${++i} - ${p.textContent}`
+        });
+    </script>
+</body>
+</html>
