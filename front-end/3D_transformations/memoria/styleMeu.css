@@ -1,0 +1,88 @@
+html,body{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-image: radial-gradient(ellipse at 0 0 , #3f5efb,#aa46fb);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide{
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem 2rem;
+
+    background-color: white;
+}
+
+section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1rem;
+
+    perspective: 600px;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.input_label{
+    width: 110px;
+    height: 90px;
+    transform-style:preserve-3d;
+    transition: .5s transform;
+    position: relative;
+    transform-origin: 100%;
+
+    outline: 2px solid orangered;
+    border-radius: 5px;
+}
+
+.cardCheck:checked + .input_label{
+    transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card_face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+}
+
+.card_front{
+    background-color: red;
+}
+
+.card_back{
+    background-color: blue;
+    transform: rotateY(180deg);
+}
