@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        p a {
+            color: red;
+            background-color: yellow;
+        }
+
+        p:has(a){
+            background-color: #ccc;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 24px;
+        }
+
+        th, td{
+            border-bottom: 1px solid #ddd;
+            padding: .5em;
+        }
+
+        th{
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+
+        tr:nth-child(even){
+            background-color: #f9f9f9;
+        }
+
+        tr:nth-child(odd){
+            background-color: white;
+        }
+
+        tr:hover{
+            background-color: #e9e9e9;
+        }
+
+        tr:has(td:first-child input[type="checkbox"]:checked){
+            background-color: #aaffaa;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th></th>
+            <th>Nome</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>Jhon Doe</td>
+            <td>jhondoe@example.com</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>Jane Smith</td>
+            <td>janesmith@example.com</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>Michael Johnson</td>
+            <td>michael@example.com</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>Sarah Willians</td>
+            <td>sarah@example.com</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>David Brown</td>
+            <td>davidbrown@example.com</td>
+        </tr>
+
+    </table>
+    <hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, vero. Architecto, unde consectetur dignissimos, velit rem dolores soluta minus ullam voluptatibus cumque voluptatum, aliquam voluptas quo aspernatur similique fuga tempore.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">clique aqui jovem </a>Corporis, vero. Architecto, unde consectetur dignissimos, velit rem dolores soluta minus ullam voluptatibus cumque voluptatum, aliquam voluptas quo aspernatur similique fuga tempore.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, vero. Architecto, unde consectetur dignissimos, velit rem dolores soluta minus ullam voluptatibus cumque voluptatum, aliquam voluptas quo aspernatur similique fuga tempore.</p>
+</body>
+</html>
