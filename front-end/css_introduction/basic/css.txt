@@ -1,0 +1,50 @@
+Sintaxe
+
+selector { propriedade: valor; }
+
+h1 { 
+  color: blue;
+  font-size: 18px;
+}
+
+Maneiras de incluir o css no html
+
+Inline:  <p style="...">...</p>
+Interno: <style>...</style>
+Externo: <link href="path/do/style.css" rel="stylesheet">
+
+------------
+
+Modos de usar o seletor
+
+Selecionar uma classe:
+  HTML
+    <p class="minha-classe"> ... </p>
+
+  CSS
+    .minha-classe { ... }
+
+Selecionar um id (é unico por página):
+  HTML
+    <p id="meu-id"> ... </p>
+
+  CSS
+   #meu-id { ... }
+
+-------------
+
+Propriedades
+
+fonts:
+  font-family
+  font-size
+  font-style
+  font-weight
+
+text:
+  text-align (right, left, center, justify)
+  text-decoration (underline, etc)
+  test-indent (normalmente utilizado para espaçamento em inicio de paragrafo)
+  text-transform (colocar texto em maiusculo, minusculo, etc...)
+
+
