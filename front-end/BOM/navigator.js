@@ -1,0 +1,6 @@
+console.log(navigator)
+console.log(navigator.userAgent)
+console.log(navigator.plugins)
+console.log(navigator.cookies)
+console.log(navigator.cookieEnabled)
+console.log(navigator.platform)

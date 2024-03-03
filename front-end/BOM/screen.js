@@ -1,0 +1,5 @@
+console.log("-----------")
+console.log(screen.availWidth)
+console.log(screen.width)
+console.log(screen.availHeight)
+console.log(screen.height)
