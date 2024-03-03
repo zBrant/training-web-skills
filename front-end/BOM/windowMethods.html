@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Teste BOM - curso javascript</h1> 
+
+   <a href="history.html">Vai para History.html</a>
+
+   <button>abre com metodo open</button>
+
+   <script>
+    var te = "testando varialvel"
+    console.log(opener)
+    document.querySelector("button").addEventListener("click", function(){
+        window.open("history.html", "janela-nome","width=480, height=300")
+    })
+
+    // document.querySelector("button").addEventListener("click", function(){
+    //     window.open("history.html")
+    // })
+   </script>
+</body>
+</html>
