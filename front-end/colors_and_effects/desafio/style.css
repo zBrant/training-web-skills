@@ -1,0 +1,61 @@
+:root{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: lighter;
+}
+
+.card_title{
+    font-weight: lighter;
+}
+
+body, html{
+    height: 100vh;
+    width: 100vw;
+    background-color: #7C3D3F;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    gap: 20px;
+}
+
+.cards, .cards-2, .cards-3{
+    display: flex;
+    gap: 20px;
+    position: inherit;
+}
+
+section{
+    width: 300px;
+    height: 200px;
+    /* flex-basis: clamp(300px, 300px , 400px); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 20px 20px 20px 50px;
+    background-image: linear-gradient(-45deg, white 95%, transparent 5%);
+    filter: drop-shadow(2px 2px 8px black);
+}
+
+.cards-2 section::before, .cards-3 section::before {
+    content: "";
+    height: 13%;
+    width: 8.3%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(-45deg, #ccc 50%, transparent 50%);
+    filter: none;
+}
+
+.cards-3 section::before{
+    background-image: linear-gradient(-45deg, white 50%, transparent 50%);
+    filter: drop-shadow(3px 3px 8px black);
+}
