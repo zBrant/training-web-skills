@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transform</title>
+
+    <style>
+        div{
+            outline: 1px solid #888;
+            width: 90%;
+            margin: .5em auto;
+        }
+
+        p{
+            width: 100%;
+        }
+
+        .destaque{
+            background-color: orange;
+        }
+
+        .div1 .destaque{
+            transform: translate(50%, 50%);
+        }
+
+        .div2 .destaque{
+            position: relative;
+            left: 25%;
+            top: 50%;
+        }
+
+        .div3 .destaque{
+            transform: rotate(30deg);
+        }
+
+        .div4 .destaque{
+            transform: scale(.75, 2);
+        }
+
+        .div5 .destaque{
+            transform: skew(-25deg);
+        }
+
+        .div6 .destaque{
+            transform: translate(100px) rotate(30deg);
+            transform-origin: 0 100%;
+        }
+
+        .div7 .destaque{
+            transform: rotate(45deg) translate(100px);
+            transform-origin: 0 100%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, velit!</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, velit!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, velit!</p>
+    </div>
+
+    <div class="div2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, velit!</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, velit!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, velit!</p>
+    </div>
+
+    <div class="div3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, velit!</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, velit!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, velit!</p>
+    </div>
+
+    <div class="div4">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, velit!</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, velit!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, velit!</p>
+    </div>
+
+    <div class="div5">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, velit!</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, velit!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, velit!</p>
+    </div>
+
+    <div class="div6">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, velit!</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, velit!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, velit!</p>
+    </div>
+
+    <div class="div7">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, velit!</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, velit!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, velit!</p>
+    </div>
+
+</body>
+</html>
