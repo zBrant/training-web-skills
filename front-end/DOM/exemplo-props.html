@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+    <h1 id="title1">Curso Javascript Completo 2018</h1>
+
+    <main class="cmain" id="idmain">
+        <h2>subtitulo</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto id corporis doloribus repudiandae </p>
+    </main>
+
+    <form action="#">
+        <input type="text" name="" id="txtNome" placeholder="nome"><br>
+        <input type="text" name="" id="txtEmail" placeholder="email" readonly>
+    </form>
+
+    <script>
+        const txtNome = document.querySelector("#txtNome")
+        const txtEmail = document.querySelector("#txtEmail")
+        txtNome.value = "Kratos"
+        txtNome.disabled = true
+        txtEmail.readOnly = true
+         
+    </script>
+</body>
+</html>
