@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var vs let vs const</title>
+</head>
+<body>
+    <h1>var vs let vs const</h1>
+
+    <script>
+        // Javascript === ECMAScript
+        // ES5 < 2015 - var  
+        // ES6 < ES2015 - let const 
+        // ES7 < ES2016  
+
+
+        function minhaFunc() {
+            const arr = [3, 5]
+            let i = arr.length //escopo de bloco
+            // var i = arr.length //escopo de função
+            
+            for (let i = 0; i < 5; i++) {
+                console.log(i)
+            }
+
+            console.log("i: ", i)
+        }
+
+        minhaFunc()
+    </script>
+</body>
+</html>

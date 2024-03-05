@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <h1>Functions</h1>
+    
+    <script>
+        // functions declarations 
+        function hello1(nome){
+            console.log("ola de function declaration,", nome)
+        }
+       hello1("Ronaldo")
+
+        // functons expressions
+        const hello2 = function (nome){
+            console.log("ola de function expression,", nome)
+        }
+        hello2("Java")
+
+        const arr = [hello1, hello2, function (){console.log("funcao anonima dentro do array executada")}]
+
+        arr[2]()
+
+        //arrow function
+        const hello3 = (nome) => {
+            console.log("ola de arrow function,", nome)
+        }
+        hello3("Ar condicionado")
+
+        const soma = (n1, n2) => n1 + n2
+        console.log(soma(27, 8))
+
+        const multiplicaPorDois = n1 => n1 * 2
+        console.log(multiplicaPorDois(7))
+
+    </script>
+</body>
+</html>

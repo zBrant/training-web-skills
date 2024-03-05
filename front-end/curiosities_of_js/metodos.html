@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodos</title>
+</head>
+<body>
+    <h1>Métodos</h1>   
+
+    <script>
+        const produto = {
+            nome: "caneta",
+            estoque: 10,
+            comprar: function(qtd){
+                if(qtd > this.estoque){
+                    console.log("quantidade insuficiente, quantidade em estoque é de", this.estoque)
+                    return null
+                }
+
+                this.estoque -= qtd
+            },
+            teste1(){
+                console.log("teste 1")
+                console.log(this)
+            },
+            teste2: () => {
+                console.log("teste 2")
+                this.quantidade = 3000
+                console.log(this) // window
+            }
+        }
+
+        produto.comprar(3)
+        console.log(produto)
+
+        produto.comprar(8)
+        console.log(produto)
+
+        produto.teste1()
+        produto.teste2()
+        console.log(produto)
+
+    </script>
+</body>
+</html>
