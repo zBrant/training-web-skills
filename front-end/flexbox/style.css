@@ -1,0 +1,95 @@
+html, body{
+    height: 100%;
+}
+.container h1{
+    text-align: center;
+}
+
+.container ul, h3, p{
+    margin: 0;
+}
+
+h3{
+    padding-top: 10px;
+    text-transform:capitalize;
+}
+
+body{
+    background-color: aqua;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
+}
+
+p{
+    display: flex;
+    margin-top: 3px;
+    color: #aaa;
+}
+
+.actions{
+    align-self: center;
+    margin: auto;
+    flex-basis: content;
+    color: rgba(136, 129, 129, 0.7);
+    opacity: 0;
+}
+
+li:hover .actions{
+    opacity: 1;
+}
+
+.lista{
+    background-color: white;
+    height: 300px;
+    border-radius: 1%;
+    overflow-y: auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .2) ;
+}
+
+li{
+    list-style: none;
+    display: flex;
+    min-height: 90px;
+    border-bottom: 1px solid #ccc;
+}
+
+li:hover{
+    background-color: #e8e8e8;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.foto-perfil{
+    text-align: center;
+    align-self: center;
+    padding: 5px;
+}
+
+.infos{
+    margin-left: 10px;
+    min-width: 60%;
+    flex-grow: 1;
+}
+
+img{
+    max-width: 67px;
+    max-height: 67px;
+    max-width: fit-content;
+    border-radius: 80%;
+}
+
+i{
+    padding: 2px;
+}
+
+.container{
+    width: 60%;
+}
