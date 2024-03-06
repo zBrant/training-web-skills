@@ -1,0 +1,83 @@
+html, body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: Helvetica, sans-serif;
+    background-color: #181717;
+    color: white;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin: auto;
+    justify-content: center ;
+    background-color: #191d1d;
+    padding: 1rem 0 0;
+    border-radius: .2rem;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin: 1px;
+}
+
+legend{
+    text-align: center;
+    font-weight: bold;
+    color: rgba(255, 255, 255, .6);
+    font-size: 1.8rem;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+input{
+    margin: .2rem 0 1.5rem;
+    padding: .5rem;
+    background-color: #0B0A0C;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 1rem ;
+}
+
+input:focus, textarea:focus{
+    background-color: #303030;
+    outline: none;
+    border-bottom: 1px solid red;
+}
+
+input:focus:valid, textarea:focus:valid{
+    border-bottom: 1px solid green;
+}
+
+textarea{
+    resize: none;
+    margin: .2rem 0 1rem;
+    background-color: #0B0A0C;
+    border: none;
+    border-bottom: 1px solid white;
+    height: 7rem;
+    color: white;
+    font-size: 1rem;
+}
+
+button{
+    width: fit-content;
+    margin-left: auto;
+    background-color: #303030;
+    padding: .8rem;
+    border: none;
+    color: inherit;
+    border: .2rem;
+    cursor: pointer;
+}
