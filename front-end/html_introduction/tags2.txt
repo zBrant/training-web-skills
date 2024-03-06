@@ -1,0 +1,18 @@
+<a> link clicavel
+  tem:
+    href = link de referencia ao conteudo externo
+    title = titulo referente a pagina que sera aberta 
+
+<link> faz vinculo do arquivo html com outro arquivo (css)
+  tem:
+    href = link de referencia ao conteudo externo
+    rel = indica qual tipo de arquivo esta sendo feito o vinculo 
+
+<img> 
+  tem:
+    src = o source da imagem
+    alt = texto alternativo caso de errado de carregar a imagem
+    
+<script> 
+  tem:
+    src = source do script
