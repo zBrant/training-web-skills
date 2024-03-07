@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:wght@300;700&display=swap');
+
+:root{
+    font-family: 'Roboto', sans-serif;
+    --min-height: 2.5rem;
+}
+
+html, 
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+p{
+    color: #555;
+}
+
+header{
+    display: flex;
+    background-color: #162028;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: .5rem 0;
+    height: var(--min-height);
+}
+
+.header__nav{
+    margin-right: 1rem;
+}
+
+.header__h1{
+    font-family: italiana, sans-serif;
+    text-transform: capitalize;
+    color: white;
+    margin: 0 0 0 13%;
+    font-size: 2.5rem;
+}
+
+.header__ul{
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.header__li{
+    font-family: roboto, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: .8rem;
+}
+
+.header__li a{
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+.section__top{
+    background-image: url(../imagens/topo.jpg);
+    width: 100vw;
+    height: calc(100vh - var(--min-height) - 4vh);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom left;
+}
+
+.section__center{
+    text-align: center;
+}
+
+.section__center__h2{
+    font-family: italiana;
+    margin-top: 6%;
+    font-size: 2rem;
+}
+
+.section__center__p{
+    font-family: roboto, sans-serif;
+    margin: 3% 20% 5% ;
+    font-size: 1.2rem;
+}
+
+.section__center__div{
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    font-family: roboto, sans-serif;
+    margin-bottom: 5%;
+}
+
+.section__center__div h3{
+    letter-spacing: .1rem;
+    color: #555;
+    text-transform: uppercase;
+}
+
+.section__bottom{
+    display: flex;
+    flex-direction: column;
+    background-color: #003d52;
+    color: white;
+    padding-left: 10%;
+    background-image: url(../imagens/bg_detalhe.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    justify-content: center;
+}
+
+.section__bottom__h1{
+    font-family: italiana;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-right: 50%;
+    margin-right: 20rem;
+}
+
+.section__bottom__p{
+    color: white;
+    font-family: roboto, sans-serif;
+    margin-right: 55%;
+    font-size: 1.2rem;
+}
+
+footer{
+    text-align: center;
+    background-color: #0b171f;
+    padding: 1rem;
+}
+
+.footer__p{
+    margin: 0;
+    letter-spacing: .2rem;
+    color: #6f8597;
+}
