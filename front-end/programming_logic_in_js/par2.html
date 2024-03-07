@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par 2</title>
+</head>
+<body>
+    <h1>Par-2</h1>
+    <script>
+        let n1 = 0, n2 = 0, cont = 0, sum = 0
+
+        do{
+            n1 = Math.floor(Math.random()*6) + 1 
+            n2 = Math.floor(Math.random()*6) + 1 
+            ++cont
+            if((n1+n2)%2 == 0)
+                ++sum
+        }while(sum < 10)
+
+        document.write("<h2><strong>"+cont+"</strong></h2>")
+
+    </script>
+</body>
+</html>

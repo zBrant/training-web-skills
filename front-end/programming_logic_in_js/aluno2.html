@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alunos</title>
+</head>
+<body>
+    <h1>Informações de um aluno</h1>
+
+    <div id="output">
+        <!-- <h2>nome 1</h2>
+        <p>Notas:</p>
+        <ul>
+            <li>1</li>
+            <li>3</li>
+            <li>3</li>
+            <li>8</li>
+        </ul>
+        <p>Média: </p>
+        <p>Aprovado? </p> -->
+    </div>
+    
+    <script>
+        const aluno = {
+            nome: "predo",
+            notas: [8,7,4,8]
+        }
+
+        const output = document.getElementById("output")
+        let sum = 0
+
+        output.innerHTML += `<h2>aluno: ${aluno.nome} </h2>`
+
+        output.innerHTML += "<p>Notas: </p>"
+        output.innerHTML += "<ul>"
+        aluno.notas.forEach(element => {
+            sum += element
+            output.innerHTML += `<li>${element}</li>`
+        });
+        output.innerHTML += "</ul>"
+
+        mediaNotas = sum/aluno.notas.length
+
+        output.innerHTML += `<p>Média: ${mediaNotas}</p>` 
+        output.innerHTML += `<p>Aprovado: ${(mediaNotas >= 7) ? "Sim" : "Não"}</p>`
+
+    </script>
+</body>
+</html>

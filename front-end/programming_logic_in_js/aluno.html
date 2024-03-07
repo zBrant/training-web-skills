@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluno</title>
+</head>
+<body>
+    <h1>Aluno</h1>
+    <h3 id="nome"></h3>
+    <ul id="notas">
+        notas
+    </ul>
+    <p id="media">Media: </p>
+    <p id="aprovado">Aprovado: </p>
+
+    <script>
+        const aluno = {
+            nome: "predo",
+            notas: [1,4,4,8]
+        }
+
+        const nome = document.getElementById("nome")
+        const notas = document.getElementById("notas")
+        const media = document.getElementById("media")
+        const aprovado = document.getElementById("aprovado")
+
+        nome.innerHTML += aluno.nome
+        aluno.notas.forEach(element => {
+            notas.innerHTML += `<li>${element}</li>`
+        });
+
+        somaNotas = aluno.notas.reduce((acc, elem) => acc + elem)
+        mediaNotas = somaNotas/aluno.notas.length
+
+        media.innerHTML += mediaNotas 
+        aprovado.innerHTML += mediaNotas > 7
+
+    </script>
+</body>
+</html>

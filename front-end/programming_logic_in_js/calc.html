@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circulo</title>
+</head>
+<body>
+    <h1>Função area do circulo</h1>
+    <label for="">
+        <input type="number" id="numero1">
+    </label>
+    <label for="">
+        <input type="text" id="tipo">
+    </label>
+    <label for="">
+        <input type="number" id="numero2">
+    </label>
+
+    <button onclick="calculate()">calcular</button>
+    <br>
+    <output id="output"></output>
+
+    <script>
+        const n1 = document.getElementById("numero1")
+        const n2 = document.getElementById("numero2")
+        const tipo = document.getElementById("tipo")
+        const output = document.getElementById("output")
+        
+        function calculate(){ 
+            switch (tipo.value) {
+                case '*':
+                    output.innerHTML = parseInt(n1.value) * parseInt(n2.value)
+                    break;
+                case '/':
+                    output.innerHTML = parseInt(n1.value) / parseInt(n2.value)
+                    break;
+            
+                case '+':
+                    output.innerHTML = parseInt(n1.value) + parseInt(n2.value)
+                    break;
+
+                case '-':
+                    output.innerHTML = parseInt(n1.value) - parseInt(n2.value)
+                    break;
+                default:
+                    alert("digite uma operação valida")
+            }
+        }
+
+    </script>
+</body>
+</html>

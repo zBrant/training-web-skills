@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bissexto</title>
+    <style>
+        body{
+            width: 100vh;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Data</h1>
+    <script>
+
+        let n = new Array(18).fill(0) 
+        n = n.map((x) => x = Math.floor(Math.random()*1000)+1)
+        var c = document.createElement("p")
+        var ci = document.createElement("p")
+        var cj = document.createElement("p")
+        var ck = document.createElement("p")
+        var cl = document.createElement("p")
+
+        var c1 = document.createTextNode("Array original: ")
+        var c2 = document.createTextNode("Array original * 2: " + n.map((x) => x*2))
+        var c3 = document.createTextNode("Soma dos numeros: " + n.reduce((acc, x) => acc + x))
+        var c4 = document.createTextNode("Soma dos numeros impares: "+n.reduce((acc, x) => { 
+            if(x%2!=0) return acc += x;
+            return acc 
+        }, 0));
+        var c5 = document.createTextNode("Soma dos numeros pares: "+n.reduce((acc, x) => { 
+            if(x%2==0) acc += x;
+            return acc
+        }, 0));
+
+        c.appendChild(c1)
+        ci.appendChild(c2)
+        cj.appendChild(c3)
+        ck.appendChild(c4)
+        cl.appendChild(c5)
+
+        document.body.appendChild(c)
+        document.body.appendChild(ci)
+        document.body.appendChild(cj)
+        document.body.appendChild(ck)
+        document.body.appendChild(cl)
+
+    </script>
+</body>
+</html>

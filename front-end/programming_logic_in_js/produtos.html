@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td{
+            border: 1px solid black;
+        }
+
+
+        th,
+        td{
+            padding: 10px;
+        }
+
+        td + td{
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Tabela produtos </h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>nome</th>
+                <th>preço</th>
+                <th>quantidade</th>
+            </tr>
+        </thead>
+        <tbody id="table">
+            <tr>
+                <td>Produto1</td>
+                <td>R$ 23.88</td>
+                <td>283</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        let produtos = [
+            {nome: "suco", preco: 277, qte: 25},
+            {nome: "arrox", preco: 90, qte: 85},
+            {nome: "carrrne", preco: 1.024, qte: 5},
+        ]
+
+        const table = document.getElementById("table")
+
+        produtos.forEach(element => {
+            table.innerHTML += `<tr>
+                <td>${element.nome}</td>
+                <td>R$ ${element.preco.toFixed(2)}</td>
+                <td>${element.qte}</td>
+            </tr>`;
+        });
+
+    </script>
+</body>
+</html>

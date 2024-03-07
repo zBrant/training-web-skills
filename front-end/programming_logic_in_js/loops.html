@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Loops</h1>
+    <p></p>
+    <script>
+        var para = document.getElementsByTagName("p")
+        const endereco = {
+            logradouro: "Rua das Tulias",
+            numero: 300
+        }
+
+        const pessoa = {
+            nome: "Raiam",
+            sobrenome: "Santos",
+            endereco
+        }
+
+        var c = document.createElement("p")
+        var c2 = document.createTextNode(`O ${pessoa.nome} mora em ${pessoa.endereco.logradouro}, número ${pessoa.endereco.numero}`)
+        c.appendChild(c2)
+        document.body.appendChild(c)
+
+        // loop for .. in serve para interagir com um objeto  
+        for(let prop in pessoa){
+            document.write(`<br>${prop} -> ${pessoa[prop]}`)
+        }
+
+    </script>
+</body>
+</html>
