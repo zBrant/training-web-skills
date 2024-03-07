@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transition</title>
+    <style>
+        div{
+            background-color: orange;
+            width: 200px;
+            height: 150px;
+            margin: 100px 150px;
+            --anima: cubic-bezier(0,2.01,.51,-0.45);
+
+            transition-property: width, height, background-color;
+            transition-duration: .5s, 1s;
+            transition-timing-function: var(--anima);
+            transition-delay: 0s, .2s;
+
+            /* transition: property(all) duration(0s) function(ease) delay(0s) */
+            transition: width .5s var(--anima),
+            height 1s var(--anima) .3s,
+            background-color .5s var(--anima);
+
+        }
+
+        div:hover{
+            width: 400px;
+            height: 400px;
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

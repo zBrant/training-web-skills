@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Font-face</title>
+
+    <style>
+        @font-face{
+            font-family: nadia;
+            src: 
+                /* 'local' faz a busca primeiro no S.O */
+                local("Nadia Serif"),
+                local("Nadia-Serif"),
+                url(fonts/nadia/nadia-serif.ttf) format("truetype"),
+                url(fonts/nadia/nadia-serif.woff) format("woff"),
+                url(fonts/nadia/nadia-serif.svg) format("svg");
+        }
+
+        h1{
+            font-family: nadia, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Font-face</h1>
+</body>
+</html>

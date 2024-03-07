@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        html{
+            font-size: 62.5%;
+            padding-bottom: 550px;
+        }
+
+        h1{
+            font-size: 3.4em;
+        }
+
+        b{
+            color: red;
+            font-size: 1em;
+            /* 30px */
+            font-size: 3rem;
+            /* 30px */
+            font-size: 50%;
+        }
+
+        p{
+            font-size: 3em;
+            /* 30px */
+            width: 10em;
+            background-color: #ccc;
+        }
+
+        .porcentagem{
+            width: 60%;
+            height: 500px;
+            background-color: yellow;
+        }
+
+        .porcentagem p{
+            background-color: orange;
+            padding-top: 50%;
+            width: 50%;
+            font-size: 1rem;
+        }
+
+        .padding-em{
+            background-color: red;
+            padding: 4em;
+        }
+
+        .padding-em p{
+            background-color: transparent;
+            margin: 0;
+            padding: 1em; 
+            /* usando 'em' ele fica relativo ao font-size  */
+            font-size: 3rem;
+        }
+
+        .viewport-container{
+            font-size: 3rem;
+            height: auto;
+        }
+
+        .viewport{
+            width: 90vw;
+            height: 90vh;
+            background-color: rgba(153, 205, 50, 0.521);
+        }
+
+        .em{
+            width: 20em;
+            padding: 1em;
+            margin: 1em;
+            background-color: orangered;
+            font-size: 2em;
+        }
+
+        .ch{
+            width: 20ch;
+            width: 180px;
+            padding: 1em;
+            margin: 1em;
+            background-color: orangered;
+            font-size: 3em;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Unidades de medidas</h1>
+    <p>
+        Lorem ipsum dolr sit amet, consectetur adipisicing <b>texto em negrito</b> elit. Beatae at ipsum nemo necessitatibus, inventore sint laboriosam cumque perferendis qui eligendi repudiandae vel illo iste. Neque quaerat facilis hic error commodi.
+    </p>
+
+    <div class="porcentagem">
+        <p>%</p>
+    </div>
+
+    <div class="padding-em">
+        <p>padding com em</p>
+    </div>
+
+    <div class="porcentagem viewport-container"> 
+        <div class="viewport">
+            viewport
+        </div>
+    </div>
+
+    <div class="em">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati natus, quo dolorem blanditiis assumenda accusamus dicta veniam veritatis recusandae temporibus.
+    </div>
+    <div class="ch">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptatibus consectetur eveniet beatae cupiditate similique amet vero est velit provident.
+    </div>
+</body>
+</html>
