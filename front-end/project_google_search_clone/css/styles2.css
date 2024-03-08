@@ -1,0 +1,254 @@
+:root{
+    font-family: Arial, Helvetica, sans-serif;
+    --gray-light:rgb(204, 204, 204, .4);
+    --margin-left-default: 9rem;
+    --dark-gray: rgb(150 150 150);
+    --default-size: 14px;
+}
+
+
+/* search container */ 
+
+header{
+    border-bottom: 1px solid var(--gray-light)
+}
+
+#input-box {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+#input-box img{
+    width: 100px;
+}
+
+#input-box input{
+    width: 40rem;
+    padding: 1rem 1.3rem;
+    border-radius: 25px;
+    border: 1px solid var(--gray-light);
+    font-size: 1rem;
+}
+
+#input-box form{
+    display: flex;
+    align-items: center;
+}
+
+#input-box form span{
+    display: inline-block;
+    font-size: var(--default-size);
+    transform: translateX(-110px);
+    padding-left: .8rem;
+    cursor: pointer;
+}
+
+/* icons below search */
+
+#links-list{
+    display: flex;
+    gap: .1rem;
+    margin-left: var(--margin-left-default);
+    font-size: var(--default-size);
+}
+
+#links-list a{
+    padding: .8rem;
+    text-decoration: none;
+    color: var(--dark-gray);
+}
+
+#links-list li{
+    padding-bottom: .7rem;
+}
+
+#links-list .active-link{
+    border-bottom: 3px solid #1A73E8;
+}
+
+#links-list .active-link a{
+    color: #1A73E8;
+}
+
+#links-list a:hover{
+    color: #1A73E8;
+}
+
+/* main container */
+
+.container{
+    display: flex;
+    margin-top: 1rem;
+    margin-left: var(--margin-left-default);
+    margin-right: 2rem;
+}
+
+.container main{
+    min-width: 50vw;
+    margin-left: 1rem;
+}
+
+/* main container results */
+
+#results{
+    margin-bottom: 1rem;
+    color: var(--dark-gray);
+    font-size: var(--default-size);
+}
+
+.search-result-box{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    margin-bottom: 1.5rem;
+} 
+
+.search-result-box > *:not(a[class="main-link"]){
+    text-decoration: none;
+    color: #3C4043;
+    font-size: var(--default-size);
+    line-height: 1.2rem;
+}
+
+.triangle{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid var(--dark-gray);
+
+    top: 12px;
+    left: 3px;
+    position: relative ;
+}
+
+.search-result-box .main-link{
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.main-link:hover{
+    text-decoration: underline;
+}
+.container .search-result-box .info-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .2rem;
+    color: var(--dark-gray);
+}
+
+.search-result-box .info-box p{
+    width: 49%;
+}
+
+.search-result-box .info-title{
+    font-weight: bold;
+}
+
+.related-results ul{
+    display: flex;
+    gap: .3rem;
+}
+
+.related-results a{
+    text-decoration: none;
+}
+
+/* aside */
+
+.container aside{
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#gallery-box{
+    display: flex;
+    height: 200px;
+    position: relative;
+}
+
+#gallery{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#gallery > *{
+    width: 33%;
+    height: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#gallery-box #moreimg-btn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0, .6);
+    color: white;
+    padding: .5rem;
+    font-size: .8rem;
+    text-decoration: none;
+    border-top-left-radius: 5px;
+}
+
+.first-img{
+    display: block;
+} 
+
+#gallery-img1{
+    background-image: url("../img/turing2.jpg");
+}
+
+#gallery-img2{
+    background-image: url("../img/turing3.jpg");
+}
+
+#gallery-img3{
+    background-image: url("../img/turing4.jpg");
+}
+
+#gallery-img4{
+    background-image: url("../img/turing5.jpg");
+}
+
+#gallery-img5{
+    background-image: url("../img/turing6.jpg");
+}
+
+#gallery-img6{
+    background-image: url("../img/turing7.jpg");
+}
+
+.container #about-box{
+    border: 1px solid #ccc;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #222;
+}
+
+#name-box #name{
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+#name-box #role{
+    color: var(--dark-gray);
+}
+
+aside #name-box{
+    border-bottom: 1px solid #ccc;
+    padding: 1rem;
+}
+
+aside #about-box > *:not(:first-child){
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.about-text span{
+    font-weight: bold;
+}
