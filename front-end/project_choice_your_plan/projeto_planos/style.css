@@ -1,0 +1,170 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: #0C1014;
+    margin: 0;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+}
+
+header{
+    width: 100%;
+}
+
+h2, h1{
+    text-transform: uppercase;
+    align-self: center;
+}
+
+.cabecalho h2{
+    padding: 0;
+    margin: 0;
+    font-weight: lighter;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 25px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    min-width: min-content;
+}
+
+nav{
+    display: flex;
+}
+
+.nav-buttons{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    text-transform: capitalize;
+    margin: 0;
+    align-items: center;
+    padding-left: 0;
+}
+
+.nav-buttons li{
+    text-align: center;
+}
+
+.nav-buttons a{
+    padding: 10px;
+}
+
+.nav-buttons a:hover{
+    text-decoration: underline;
+    cursor: default;
+}
+
+.header__nav--active{
+    background-color: #CBE300;
+    color: black;
+    border-radius: 4px;
+    pointer-events: none;
+}
+
+.cabecalho{
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+    margin: 70px 0;
+    font-size: 50px;
+}
+ 
+.planos-disp{
+    display: flex;
+    align-items: left;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.planos-disp div{
+    display: flex;
+    flex-direction: column;
+    background-color: #21262D;
+    padding: 25px;
+    border-radius: 8px;
+    flex: 1;
+}
+
+.plano{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.plano h3{
+    border-bottom: 2px solid #CBE300;
+    padding-bottom: 4px;
+}
+
+.plan-info{
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+    flex: 1;
+}
+
+.plano p{
+    font-size: 25px;
+}
+
+span{
+    font-size: 12px;
+    text-transform: lowercase;
+}
+
+.plano h3{
+    margin-top: 0;
+}
+
+.plan-info li{
+    color: #b5b5b5;
+    line-height: 1.8;
+    font-size: 12px;
+}
+
+.plan-info li::marker{
+    color: #CBE300;
+}
+
+.bottom-buttom{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    background-color: #CBE300;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 70px;
+}
+
+.bottom-buttom a{
+    width: 100%;
+    display: block;
+    text-transform: uppercase;
+    color: black;
+    padding: 10px 20px;
+}
