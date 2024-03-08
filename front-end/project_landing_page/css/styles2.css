@@ -1,0 +1,415 @@
+:root {
+  --primary: #00baf2;
+  --secondary: #95989a;
+  --text-color: #fff;
+  --text-secondary: #000;
+  --text-tertiary: #5d5d5d;
+  font-family: "Montserrat";
+}
+
+img{
+    width: 200px;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/* header */
+
+#event-subscription{
+    height: 85vh;
+
+    background: url("../img/hrz-5.jpg"), rgb(0 0 0 /.8);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#disclaimer{
+    width: 400px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: white;
+}
+
+#disclaimer h2{
+    font-weight: 700;
+    font-size: 3.2rem;
+    color: var(--primary);
+}
+
+#disclaimer .about-event{
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    width: 90%;
+    padding: 3rem 0;
+    color: white;
+}
+
+#disclaimer .event-date{
+    margin-top: .8rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+
+#subscription-form{
+    background-color: var(--secondary);
+    box-sizing: border-box;
+    height: fit-content;
+    width: 360px;
+    padding: 2rem;
+    margin-left: 8rem;
+}
+
+#subscription-form p:first-child{
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: black;
+    margin-bottom: 1.5rem;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    color: var(--text-tertiary);
+    font-weight: 700;
+    margin-top: .8rem;
+}
+
+.form-group input, 
+.form-group select{
+    padding: .5rem;
+    border-radius: 6px;
+    border: 1px solid var(--secondary);
+}
+
+#subscription-form form > input{
+    width: 100%;
+    margin-top: .7rem;
+    background-color: var(--primary);
+    border: 1px solid var(--secondary);
+    padding: 1rem;
+    color: white;
+    text-transform: uppercase;
+    opacity: .8;
+}
+
+
+#subscription-form form > input:hover{
+    opacity: 1;
+}
+
+/* benefits */
+#key-benefits h2{
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: var(--secondary);
+    padding: 3.1rem 0;
+    font-weight: 500;
+}
+
+.benefits{
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+    padding: 4rem 0;
+}
+
+.benefit p{
+    text-align: center;
+    width: 215px;
+    margin: 0 auto;
+    color: var(--text-tertiary);
+    line-height: 1.2;
+}
+
+.benefit-img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 1rem;
+}
+
+#benefit-1{
+    background-image: url("../img/sqr-1.jpg");
+}
+
+#benefit-2{
+    background-image: url("../img/sqr-2.jpg");
+}
+
+#benefit-3{
+    background-image: url("../img/sqr-3.jpg");
+}
+
+/* location */
+
+#location{
+    background: url("../img/hrz-1.jpg"), rgb(0 0 0 /.8);
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    color: white;
+    display: flex;
+    padding: 5.4rem 10rem;
+    justify-content: space-between;
+}
+
+#address{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+#address i{
+    font-size: 4rem;
+    color: var(--primary);
+}
+
+#address-details{
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 1.2;
+}
+
+#about-location{
+    width: 40%;
+}
+
+#about-location h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--primary);
+    line-height: 1.2;
+    margin-bottom: 2.5rem;
+}
+
+#about-location p{
+    line-height: 1.5;
+}
+
+/* datails */
+
+#details{
+    width: 80vw;
+    margin: 3rem auto;
+}
+
+.detail{
+    margin-bottom: 3.8rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.detail img{
+    flex: 1 1 0;
+}
+
+#detail-1 h3{
+    font-size: 3rem;
+    padding-left: 5.6rem;
+    font-weight: 700;
+}
+
+.detail-description{
+    line-height: 1.2;
+    flex: 1 1 0;
+}
+
+#details > .detail:not(:first-child) ul{
+    list-style-type: disc;
+    line-height: 1.6;
+    list-style-position: inside;
+    margin-left: 2rem;
+}
+
+#details > .detail:not(:first-child) ul li:last-child{
+    font-weight: 600;
+}
+
+#details > .detail:not(:first-child) h3{
+    margin-left: 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+#detail-3 .detail-description > * {
+    padding-left: 3rem;
+}
+
+/* cta */
+
+#cta{
+    height: 48vh;
+    background: url("../img/hrz-6.jpg"), rgb(0 0 0 /.8);
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-weight: 500;
+}
+
+#cta h3{
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#cta button{
+    padding: 1rem 6rem;
+    background-color: var(--primary);
+    border: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    opacity: .8;
+}
+
+#cta button:hover{
+    opacity: 1;
+}
+
+/* footer */
+
+#footer{
+    text-align: center;
+    padding: 3.6rem 0;
+    color: var(--secondary);
+    line-height: 1.2;
+}
+
+#footer h3{
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+#footer h3+p{
+    margin-bottom: 1.4rem;
+    font-size: 1.2rem;
+}
+
+#footer span{
+    font-weight: 700;
+}
+
+@media (max-width: 550px) {
+    /* header */
+    #event-subscription{
+        flex-direction: column;
+        height: fit-content;
+        padding: 0 2rem 0;
+    }
+
+    #subscription-form{
+        margin: 2rem 0;
+    }
+
+    #disclaimer{
+        margin: 0 auto;
+    }
+
+    #disclaimer h2{
+        margin-top: 2rem;
+    }
+
+    #detail-3{
+        flex-direction: column-reverse;
+    }
+
+    /* benefits */
+
+    .benefits{
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    /* location */
+
+    #location{
+        flex-wrap: wrap;
+        padding: 2rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    #address{
+        flex-direction: column;
+    }
+
+    #about-location{
+        width: 100%;
+        text-align: center;
+    }
+
+    #about-location p {
+        display: none
+    }
+
+    /* details */
+    .detail{
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+        flex-direction: column;
+    }
+
+    .detail-description{
+        width: 100%;
+    }
+
+    #detail-1 img{
+        display: none;
+    }
+
+    .detail img{
+        width: 100%;
+    }
+
+    #detail-1 h3{
+        padding: 0;
+    }
+
+    #detail-3{
+        flex-wrap: wrap-reverse;
+    }
+
+    #details > .detail:not(:first-child) h3{
+        margin: 2rem 0;
+        padding: 0;
+    }
+
+    #details > .detail:not(:first-child) ul{
+        margin: 0 0 2rem;
+        padding: 0;
+    } 
+
+    /* cta */
+    #cta button{
+        padding: .8rem 4rem;
+    }
+    
+}
