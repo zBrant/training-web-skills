@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fit Content</title>
+
+    <style>
+        .container{
+            border: 2px solid black;
+            padding: 16px;
+            width: 300px;
+            margin-bottom: 16px;
+            height: 300px;
+            background-color: rgba(25, 88, 64, 0.7);
+        }
+
+        .item{
+            background-color: yellowgreen;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        .fit-content .item{
+            width: fit-content;
+        }
+
+        .min-content .item{
+            width: min-content;
+        }
+
+        .max-content .item{
+            width: max-content;
+        }
+
+        .overflow-hidden{
+            overflow: hidden;
+        }
+
+        .overflow-scroll{
+            overflow: scroll;
+        }
+
+        .overflow-auto{
+            overflow: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container fit-content overflow-auto">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, nisi?</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel dolorum sed odit eos ratione, tenetur rem delectus, ea quod mollitia quia fugiat aspernatur officiis ab.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae excepturi quo maxime exercitationem id libero esse dignissimos repellendus? Ad, est vero esse dignissimos minus soluta beatae consectetur explicabo. Quam ea rerum consectetur quod sunt reiciendis quia eius modi, distinctio rem exercitationem impedit laboriosam corrupti itaque ad eligendi. Quibusdam expedita tempore tempora ipsa fugiat blanditiis architecto nihil dolor ex magnam natus nesciunt quos sed modi officiis nisi reiciendis vitae ab, ullam quod esse! Quas, reiciendis expedita.</div>
+    </div>
+
+    <div class="container min-content overflow-auto">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, nisi?</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel dolorum sed odit eos ratione, tenetur rem delectus, ea quod mollitia quia fugiat aspernatur officiis ab.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae excepturi quo maxime exercitationem id libero esse dignissimos repellendus? Ad, est vero esse dignissimos minus soluta beatae consectetur explicabo. Quam ea rerum consectetur quod sunt reiciendis quia eius modi, distinctio rem exercitationem impedit laboriosam corrupti itaque ad eligendi. Quibusdam expedita tempore tempora ipsa fugiat blanditiis architecto nihil dolor ex magnam natus nesciunt quos sed modi officiis nisi reiciendis vitae ab, ullam quod esse! Quas, reiciendis expedita.</div>
+    </div>
+
+    <div class="container max-content overflow-auto">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, nisi?</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel dolorum sed odit eos ratione, tenetur rem delectus, ea quod mollitia quia fugiat aspernatur officiis ab.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae excepturi quo maxime exercitationem id libero esse dignissimos repellendus? Ad, est vero esse dignissimos minus soluta beatae consectetur explicabo. Quam ea rerum consectetur quod sunt reiciendis quia eius modi, distinctio rem exercitationem impedit laboriosam corrupti itaque ad eligendi. Quibusdam expedita tempore tempora ipsa fugiat blanditiis architecto nihil dolor ex magnam natus nesciunt quos sed modi officiis nisi reiciendis vitae ab, ullam quod esse! Quas, reiciendis expedita.</div>
+    </div>
+</body>
+</html>
