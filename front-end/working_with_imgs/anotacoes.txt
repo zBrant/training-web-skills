@@ -1,0 +1,14 @@
+Formas de inserir imagem
+
+HTML
+<img src="..." alt="...">
+
+src - fonte da imagem
+
+alt (Descrição da imagem) - se a imagem der erro, oque estiver 
+escrito aqui aparecera no lugar
+
+CSS
+background-image: url(...);
+
+
