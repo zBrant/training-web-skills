@@ -1,0 +1,55 @@
+Tags Semanticas
+
+estruturação da pagina
+<div id="...">
+    
+    //inserir o cabeçalho da pagina
+    <header> </header>
+
+    // navegação principal da pagina
+    <nav> </nav>
+
+    // conteudo principal da pagina
+    <main> </main>
+
+    // rodape da pagina
+    <footer> </footer>
+</div>
+
+outras tags
+
+<section> -> agrupa um conjunto de informações relacionadas
+             fica entre a tag 'article' e 'div'
+
+<article> -> conteudo principal importante da pagina
+
+<aside> ->  qualquer conteudo que esteja a parte do 
+            conteudo principal da pagina
+
+---------------
+Tags Não Semanticas
+
+<div> -> elemento de bloco, ocupa 100% da area disponivel 
+         e gerar qubra de linha 
+<span> -> elemento de linha, não vai gerar quebra de linha 
+
+server apenas para ajudar com layouts e design da pagina, não
+acrescentam valor semantico, o motor de busca nao vai entender 
+que isso tem um significado para o conteudo da minha pagina
+
+---------------
+Position (posicionar os elemento na tela)
+
+5 valores:
+- static (valor padrão)
+- relative
+- absolute
+- fixed
+- sticky
+
+funcinam em conjunto com essas propriedades:
+- top
+- bottom
+- left
+- right
+
